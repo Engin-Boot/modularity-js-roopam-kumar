@@ -17,7 +17,7 @@ const MinorColors = [
 ];
 
 
-import{getPairNumberFromColors} from './getPairNumberFromColors.js';
+import{GetPairNumberFromColors} from './getPairNumberFromColors.js';
 
 
 
