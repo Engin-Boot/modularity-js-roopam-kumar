@@ -16,18 +16,7 @@ const MinorColors = [
     "slate"
 ];
 
-function include(file) { 
-  
-  var script  = document.createElement('script'); 
-  script.src  = file; 
-  script.type = 'text/javascript'; 
-  script.defer = true; 
-  
-  document.getElementsByTagName('head').item(0).appendChild(script); 
-  
-} 
-
-include(getColorFromPairNumber.js);
+import{GetColorFromPairNumber} from './getColorFromPairNumber.js';
 
 function testNumberToPair(number, expectedMajor, expectedMinor) {
     const pairOfColors = GetColorFromPairNumber(number);
