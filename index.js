@@ -16,15 +16,16 @@ const MinorColors = [
     "slate"
 ];
 
-function GetColorFromPairNumber(pairNumber) {
-    let colorPair = {};
-    const zeroBasedPairNumber = pairNumber - 1;
-    const majorColorIndex =
-        Math.floor(zeroBasedPairNumber / MinorColors.length);
-    colorPair.major = MajorColors[majorColorIndex];
-    colorPair.minor = MinorColors[zeroBasedPairNumber % MinorColors.length];
-    return colorPair
-}
+function include(file) { 
+  
+  var script  = document.createElement('script'); 
+  script.src  = file; 
+  script.type = 'text/javascript'; 
+  script.defer = true; 
+  
+  document.getElementsByTagName('head').item(0).appendChild(script); 
+  
+} 
 
 function GetPairNumberFromColors(majorColor, minorColor) {
     let majorIndex = 0;
@@ -55,6 +56,7 @@ function testColorToNumber(majorColor, minorColor, expectedNumber) {
     expect(pairNumber).to.equal(expectedNumber);
 }
 
+include(getColorFromPairNumber.js);
 console.log("color coder");
 testNumberToPair(4, "white", "brown");
 testNumberToPair(25, "violet", "slate");
