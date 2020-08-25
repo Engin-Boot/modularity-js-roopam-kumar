@@ -27,4 +27,4 @@ function testColorToNumber(majorColor, minorColor, expectedNumber) {
     expect(pairNumber).to.equal(expectedNumber);
 }
 
-export{testColorToNumber};
+export{ testColorToNumber };
