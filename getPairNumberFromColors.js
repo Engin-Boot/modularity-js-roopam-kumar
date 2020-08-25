@@ -33,4 +33,4 @@ function GetPairNumberFromColors(majorColor, minorColor) {
     finalNumber = majorIndex * MinorColors.length + minorIndex + 1;
     return finalNumber;
 }
-export{GetPairNumberFromColors};
+export { GetPairNumberFromColors };
