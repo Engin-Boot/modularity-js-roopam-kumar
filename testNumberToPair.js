@@ -16,7 +16,7 @@ const MinorColors = [
     "slate"
 ];
 
-import {GetColorFromPairNumber} from './getColorFromPairNumber.js';
+import { GetColorFromPairNumber } from './getColorFromPairNumber.js';
 
 function testNumberToPair(number, expectedMajor, expectedMinor) {
     const pairOfColors = GetColorFromPairNumber(number);
@@ -24,4 +24,4 @@ function testNumberToPair(number, expectedMajor, expectedMinor) {
     expect(pairOfColors.major).equals(expectedMajor);
     expect(pairOfColors.minor).equals(expectedMinor);
 }
-export {testNumberToPair};
+export { testNumberToPair };
