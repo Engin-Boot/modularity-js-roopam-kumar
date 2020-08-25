@@ -16,20 +16,9 @@ const MinorColors = [
     "slate"
 ];
 
-function include(file) { 
-  
-  var script  = document.createElement('script'); 
-  script.src  = file; 
-  script.type = 'text/javascript'; 
-  script.defer = true; 
-  
-  document.getElementsByTagName('head').item(0).appendChild(script); 
-  
-} 
-include(getColorFromPairNumber.js);
-include(getPairNumberFromColors.js);
-include(testNumberToPair.js);
-include(testColorToNumber.js);
+import {testNumberToPair} from './testNumberToPair.js';
+import {testColorToNumber} from './testColorToNumber.js';
+
 console.log("color coder");
 testNumberToPair(4, "white", "brown");
 testNumberToPair(25, "violet", "slate");
