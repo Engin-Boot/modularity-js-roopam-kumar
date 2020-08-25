@@ -26,3 +26,5 @@ function testColorToNumber(majorColor, minorColor, expectedNumber) {
     console.log(`${majorColor} ${minorColor} = ${pairNumber}`);
     expect(pairNumber).to.equal(expectedNumber);
 }
+
+export{testColorToNumber};
