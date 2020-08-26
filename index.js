@@ -1,5 +1,8 @@
 const expect = require('chai').expect;
-
+require('./getColorFromPairNumber.js');
+require('./getPairNumberFromColors.js');
+require('./testNumberToPair.js');
+require('./testColorToNumber.js');
 
 const MajorColors = [
     "white",
@@ -17,8 +20,8 @@ const MinorColors = [
     "slate"
 ];
 
-import testNumberToPair from './testNumberToPair'; //using import
-import testColorToNumber from './testColorToNumber';
+//import testNumberToPair from './testNumberToPair'; //using import
+//import testColorToNumber from './testColorToNumber';
 
 console.log("color coder");
 testNumberToPair(4, "white", "brown");
