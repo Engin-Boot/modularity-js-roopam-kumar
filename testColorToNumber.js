@@ -1,4 +1,6 @@
 const expect = require('chai').expect;
+const  GetPairNumberFromColors  = require('./getPairNumberFromColors.js');
+
 
 const MajorColors = [
     "white",
@@ -17,7 +19,7 @@ const MinorColors = [
 ];
 
 
-import{ GetPairNumberFromColors } from './getPairNumberFromColors.js';
+
 
 
 
@@ -27,4 +29,5 @@ function testColorToNumber(majorColor, minorColor, expectedNumber) {
     expect(pairNumber).to.equal(expectedNumber);
 }
 
-export{ testColorToNumber };
+module.exports = { testColorToNumber,
+                 };
