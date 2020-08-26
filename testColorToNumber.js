@@ -24,11 +24,11 @@ const MinorColors = [
 //import {GetPairNumberFromColors} from './getPairNumberFromColors';
 
 
-export function testColorToNumber(majorColor, minorColor, expectedNumber) {
+function testColorToNumber(majorColor, minorColor, expectedNumber) {
     const pairNumber = GetPairNumberFromColors(majorColor, minorColor);
     console.log(`${majorColor} ${minorColor} = ${pairNumber}`);
     expect(pairNumber).to.equal(expectedNumber);
 }
-
+export {testColorToNumber};
 //module.exports = { testColorToNumber,
                 // };
