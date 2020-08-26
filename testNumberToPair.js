@@ -20,11 +20,12 @@ const MinorColors = [
 
 //import {GetColorFromPairNumber} from './getColorFromPairNumber';
 
-export function testNumberToPair(number, expectedMajor, expectedMinor) {
+function testNumberToPair(number, expectedMajor, expectedMinor) {
     const pairOfColors = GetColorFromPairNumber(number);
     console.log(`${number} = ${expectedMajor} ${expectedMinor}`);
     expect(pairOfColors.major).equals(expectedMajor);
     expect(pairOfColors.minor).equals(expectedMinor);
 }
+export {testNumberToPair};
 //module.exports = { testNumberToPair,
                  //};
