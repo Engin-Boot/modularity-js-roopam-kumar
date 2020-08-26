@@ -25,4 +25,5 @@ function GetColorFromPairNumber(pairNumber) {
     colorPair.minor = MinorColors[zeroBasedPairNumber % MinorColors.length];
     return colorPair
 }
-export { GetColorFromPairNumber };
+module.exports = { GetColorFromPairNumber,
+                 };
