@@ -17,7 +17,7 @@ const MinorColors = [
     "slate"
 ];
 
-import {testNumberToPair} from './testNumberToPair';
+import {testNumberToPair} from './testNumberToPair'; //using import
 import {testColorToNumber} from './testColorToNumber';
 
 console.log("color coder");
