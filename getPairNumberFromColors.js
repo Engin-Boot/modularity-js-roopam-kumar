@@ -16,7 +16,7 @@ const MinorColors = [
     "slate"
 ];
 
-function GetPairNumberFromColors(majorColor, minorColor) {
+export function GetPairNumberFromColors(majorColor, minorColor) {
     let majorIndex = 0;
     let minorIndex = 0;
     let finalNumber = 0;
@@ -33,5 +33,5 @@ function GetPairNumberFromColors(majorColor, minorColor) {
     finalNumber = majorIndex * MinorColors.length + minorIndex + 1;
     return finalNumber;
 }
-module.exports = { GetPairNumberFromColors,
-                 };
+//module.exports = { GetPairNumberFromColors,
+                 //};
