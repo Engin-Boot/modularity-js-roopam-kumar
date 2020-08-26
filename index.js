@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-require('./getColorFromPairNumber.js');
+require('./getColorFromPairNumber.js'); //using require
 require('./getPairNumberFromColors.js');
 require('./testNumberToPair.js');
 require('./testColorToNumber.js');
